@@ -23,3 +23,26 @@ header p {
   font-size: 1.5rem;
   margin: 0;
   letter-spacing: 2px; }
+
+#grid .grid-div {
+  width: 90%;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  margin: 40px auto; }
+  #grid .grid-div img {
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 20px; }
+  #grid .grid-div p {
+    padding: 0 1.8rem;
+    line-height: 1.5rem; }
+  #grid .grid-div .grid-btn {
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 20px;
+    width: 40%;
+    padding: 0.6rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase; }
