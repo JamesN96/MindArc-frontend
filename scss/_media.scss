@@ -1,0 +1,39 @@
+// Small devices
+
+@include mediaSm {
+  // Header
+  header {
+    .container {
+      background-position: 50% 38%;
+      padding: 7.1rem 0rem;
+      color: $primary-color;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 4.1rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  // Grid
+
+  #grid {
+    .grid-div {
+      p {
+        padding: 0 2rem;
+        font-size: 1.4rem;
+      }
+
+      .grid-btn {
+        width: 48%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 35px;
+      }
+    }
+  }
+}
