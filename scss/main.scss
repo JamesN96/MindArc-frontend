@@ -1,0 +1,37 @@
+$primary-color: rgb(171, 171, 171);
+$primary-color: #fff;
+$secondary-color: #000;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+// Header
+
+header {
+  .container {
+    background-image: url("../img/600x600.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 38%;
+    padding: 4rem 0rem;
+    color: $primary-color;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+}
