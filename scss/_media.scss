@@ -1,6 +1,91 @@
+// Media XL
+
+@include mediaLg {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  // Header
+
+  header {
+    .container {
+      img {
+        &.mobile {
+          display: none;
+        }
+
+        &.desktop {
+          display: block;
+        }
+      }
+
+      h1 {
+        font-size: 2.7rem;
+        top: 150px;
+      }
+
+      p {
+        top: 210px;
+        font-size: 1.42rem;
+      }
+    }
+  }
+
+  // Grid
+
+  #grid {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .grid-div {
+        position: relative;
+
+        .grid-img {
+          height: auto;
+        }
+
+        p {
+          padding: 0 1rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        .grid-btn {
+          width: 50%;
+          font-size: 0.8rem;
+          padding: 0.6rem 0;
+        }
+
+        &:nth-child(2) .grid-btn,
+        &:nth-child(3) .grid-btn {
+          // position: relative;
+          // top: 94px;
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices
+
+// @include mediaSm {
+//   .container {
+//     width: 75%;
+//     margin: 0 auto;
+//     border: 1px solid red;
+//   }
+// }
+
 // Small devices
 
-@include mediaSm {
+@include mediaXs {
   // Header
   header {
     .container {
