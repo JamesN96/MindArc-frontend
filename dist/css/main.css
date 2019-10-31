@@ -4,45 +4,88 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center; }
 
-header .container {
-  background-image: url("../img/600x600.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 38%;
-  padding: 4rem 0rem;
-  color: #fff;
-  width: 100%; }
-
-header h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  margin: 0;
-  padding: 0; }
-
-header p {
-  font-size: 1.5rem;
-  margin: 0;
-  letter-spacing: 2px; }
+header {
+  width: 100%;
+  height: auto; }
+  header .container {
+    color: #fff; }
+  header img {
+    width: 100%;
+    max-height: 650px;
+    filter: brightness(70%); }
+  header h1,
+  header p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+  header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    z-index: 2;
+    top: 50px;
+    letter-spacing: 2px; }
+  header p {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    top: 235px; }
 
 #grid .grid-div {
   width: 90%;
-  border: 1px solid #e4e4e4;
-  border-radius: 5px;
-  margin: 40px auto; }
+  border: 2px solid #ebebeb;
+  border-radius: 10px;
+  margin: 35px auto; }
   #grid .grid-div img {
     width: 90%;
+    height: 210px;
     border-radius: 5px;
     margin-top: 20px; }
   #grid .grid-div p {
-    padding: 0 1.8rem;
-    line-height: 1.5rem; }
+    padding: 0 1rem;
+    margin: 18px 0 16px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    color: #4f4e4e; }
   #grid .grid-div .grid-btn {
     background: #fff;
-    border: 3px solid #000;
+    border: 3px solid #4f4e4e;
     border-radius: 20px;
-    width: 40%;
-    padding: 0.6rem;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
+    width: 45%;
+    padding: 0.6rem 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase; }
+
+@media screen and (min-width: 500px) {
+  header .container {
+    color: #fff;
+    width: 100%; }
+  header h1 {
+    margin: 0 auto;
+    font-size: 3.7rem;
+    top: 115px; }
+  header p {
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    top: 295px; }
+  #grid .grid-div {
+    margin: 45px auto; }
+    #grid .grid-div .grid-img {
+      height: 280px;
+      margin-top: 25px; }
+    #grid .grid-div p {
+      padding: 0 2.4rem;
+      font-size: 1.3rem;
+      line-height: 1.95rem;
+      margin: 18px 0px; }
+    #grid .grid-div .grid-btn {
+      width: 48%;
+      padding: 0.9rem;
+      font-size: 1.2rem;
+      border-radius: 35px;
+      margin-bottom: 25px; } }
