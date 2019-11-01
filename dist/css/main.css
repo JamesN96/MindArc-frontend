@@ -155,6 +155,24 @@ header {
         right: 0;
         bottom: 0; } }
 
+@media screen and (min-width: 650px) {
+  header .container h1 {
+    font-size: 4.7rem;
+    padding: 0 4rem;
+    top: 17.5%; }
+  header .container p {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    top: 46%; }
+  #grid .container {
+    width: 80%;
+    margin: 0 auto; }
+    #grid .container .grid-div p {
+      font-size: 1.4rem;
+      padding: 0;
+      width: 81%;
+      margin: 18px auto 15px; } }
+
 @media screen and (min-width: 500px) {
   header .container {
     color: #fff;
@@ -162,11 +180,11 @@ header {
   header h1 {
     margin: 0 auto;
     font-size: 3.7rem;
-    top: 115px; }
+    top: 12.8%; }
   header p {
     font-size: 1.9rem;
     line-height: 2.8rem;
-    top: 295px; }
+    top: 34%; }
   #grid .grid-div {
     margin: 45px auto; }
     #grid .grid-div .grid-img {

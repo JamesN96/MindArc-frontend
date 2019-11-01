@@ -191,12 +191,47 @@
 
 // Small devices
 
+@include mediaSm {
+  header {
+    .container {
+      h1 {
+        font-size: 4.7rem;
+        padding: 0 4rem;
+        top: 17.5%;
+      }
+
+      p {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+        top: 46%;
+      }
+    }
+  }
+
+  // Grid
+  #grid {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+
+      .grid-div {
+        p {
+          font-size: 1.4rem;
+          padding: 0;
+          width: 81%;
+          margin: 18px auto 15px;
+        }
+      }
+    }
+  }
+}
+
+// Xs devices
+
 @include mediaXs {
   // Header
   header {
     .container {
-      //   background-position: 40% 55%;
-      //   padding: 6.3rem 0rem;
       color: $primary-color;
       width: 100%;
     }
@@ -204,15 +239,13 @@
     h1 {
       margin: 0 auto;
       font-size: 3.7rem;
-      // top: 11.5%;
-      top: 115px;
+      top: 12.8%;
     }
 
     p {
       font-size: 1.9rem;
       line-height: 2.8rem;
-      // top: 30%;
-      top: 295px;
+      top: 34%;
     }
   }
 
