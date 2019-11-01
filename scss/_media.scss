@@ -1,3 +1,37 @@
+// Media Xl
+
+@include mediaXl {
+  // Header
+
+  header {
+    div.container {
+      h1 {
+        font-size: 3.45rem;
+        top: 37.5%;
+      }
+
+      p {
+        font-size: 1.82rem;
+        top: 54%;
+      }
+    }
+  }
+
+  // Grid
+  #grid {
+    .container {
+      width: 65%;
+    }
+
+    .grid-div {
+      p {
+        padding: 0rem;
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+}
+
 // Media Lg
 
 @include mediaLg {
@@ -10,6 +44,7 @@
 
   header {
     .container {
+      position: relative;
       img {
         &.mobile {
           display: none;
@@ -22,12 +57,12 @@
 
       h1 {
         font-size: 2.7rem;
-        top: 150px;
+        top: 38%;
       }
 
       p {
-        top: 210px;
         font-size: 1.42rem;
+        top: 53.5%;
       }
     }
   }
