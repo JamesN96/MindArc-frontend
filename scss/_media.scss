@@ -1,3 +1,37 @@
+// Widescreen
+
+@include mediaWide {
+  header {
+    div.container {
+      h1.wide {
+        font-size: 4.65rem;
+      }
+
+      p.wide {
+        font-size: 2.54rem;
+        top: 55.4%;
+      }
+    }
+  }
+
+  // grid
+
+  #grid {
+    .container {
+      .grid-div {
+        p.wide {
+          font-size: 1.2rem !important;
+          width: 85% !important;
+          padding: 0 !important;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: 1.8rem !important;
+        }
+      }
+    }
+  }
+}
+
 // Media Xl
 
 @include mediaXl {
