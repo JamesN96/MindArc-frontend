@@ -17,15 +17,16 @@
   // grid
 
   #grid {
-    .container {
+    .container.wide {
+      width: 65%;
+
       .grid-div {
         p.wide {
-          font-size: 1.2rem !important;
-          width: 85% !important;
-          padding: 0 !important;
-          margin-left: auto;
-          margin-right: auto;
-          line-height: 1.8rem !important;
+          font-size: 1.2rem;
+          width: 85%;
+          padding: 0;
+          margin: 18px auto 15px;
+          line-height: 1.8rem;
         }
       }
     }
