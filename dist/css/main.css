@@ -119,10 +119,10 @@ header {
       display: none; }
     header .container img.desktop {
       display: block; }
-    header .container h1 {
+    header .container h1.md {
       font-size: 1.7rem;
       top: 37.5%; }
-    header .container p {
+    header .container p.md {
       font-size: 0.82rem;
       top: 50%; }
   #grid .container {
@@ -135,11 +135,12 @@ header {
       #grid .container .grid-div img {
         height: auto;
         padding-bottom: 0; }
-      #grid .container .grid-div p {
-        font-size: 0.7rem;
-        padding: 0 0.7rem;
+      #grid .container .grid-div p.md {
+        font-size: 0.6rem;
+        padding: 0 0.3rem;
         line-height: 1rem;
-        margin-bottom: 0.55rem; }
+        width: 90%;
+        margin: 10px auto 0.55rem; }
       #grid .container .grid-div .grid-btn {
         width: 47%;
         font-size: 0.55rem;
