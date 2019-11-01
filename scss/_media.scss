@@ -39,12 +39,12 @@
 
   header {
     div.container {
-      h1 {
+      h1.xl {
         font-size: 3.45rem;
         top: 37.5%;
       }
 
-      p {
+      p.xl {
         font-size: 1.82rem;
         top: 54%;
       }
@@ -53,14 +53,14 @@
 
   // Grid
   #grid {
-    .container {
+    .container.xl {
       width: 65%;
-    }
 
-    .grid-div {
-      p {
-        padding: 0rem;
-        font-size: 0.9rem !important;
+      .grid-div {
+        p.xl {
+          padding: 0 0.9rem;
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -71,24 +71,12 @@
 @include mediaLg {
   .container {
     width: 90%;
-    margin: 0 auto;
   }
 
   // Header
 
   header {
     .container {
-      position: relative;
-      img {
-        &.mobile {
-          display: none;
-        }
-
-        &.desktop {
-          display: block;
-        }
-      }
-
       h1.lg {
         font-size: 2.7rem;
         top: 38%;
@@ -105,9 +93,6 @@
 
   #grid {
     .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
       .grid-div {
         p.lg {
           padding: 0 1.3rem;
