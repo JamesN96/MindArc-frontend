@@ -89,7 +89,9 @@ header {
     width: 65%; }
     #grid .container.xl .grid-div p.xl {
       padding: 0 0.9rem;
-      font-size: 0.9rem; } }
+      font-size: 0.9rem;
+      margin: 12px auto 12px;
+      line-height: 1.4rem; } }
 
 @media screen and (min-width: 1171px) {
   .container {
@@ -103,7 +105,8 @@ header {
   #grid .grid .grid-div p.lg {
     padding: 0 1.3rem;
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    margin-bottom: 15px; }
   #grid .grid .grid-div .grid-btn.lg {
     width: 50%;
     font-size: 0.8rem;
