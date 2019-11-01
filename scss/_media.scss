@@ -89,12 +89,12 @@
         }
       }
 
-      h1 {
+      h1.lg {
         font-size: 2.7rem;
         top: 38%;
       }
 
-      p {
+      p.lg {
         font-size: 1.42rem;
         top: 53.5%;
       }
@@ -109,34 +109,16 @@
       grid-template-columns: repeat(3, 1fr);
 
       .grid-div {
-        position: relative;
-
-        .grid-img {
-          height: auto;
-        }
-
-        p {
+        p.lg {
           padding: 0 1.3rem;
           font-size: 1rem;
           line-height: 1.5rem;
         }
 
-        .grid-btn {
+        .grid-btn.lg {
           width: 50%;
           font-size: 0.8rem;
           padding: 0.6rem 0;
-        }
-
-        &:nth-child(2) .grid-btn,
-        &:nth-child(3) .grid-btn {
-          // position: relative;
-          // top: 94px;
-          position: absolute;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          bottom: 0;
         }
       }
     }

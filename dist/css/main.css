@@ -100,35 +100,23 @@ header {
       display: none; }
     header .container img.desktop {
       display: block; }
-    header .container h1 {
+    header .container h1.lg {
       font-size: 2.7rem;
       top: 38%; }
-    header .container p {
+    header .container p.lg {
       font-size: 1.42rem;
       top: 53.5%; }
   #grid .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
-    #grid .grid .grid-div {
-      position: relative; }
-      #grid .grid .grid-div .grid-img {
-        height: auto; }
-      #grid .grid .grid-div p {
-        padding: 0 1.3rem;
-        font-size: 1rem;
-        line-height: 1.5rem; }
-      #grid .grid .grid-div .grid-btn {
-        width: 50%;
-        font-size: 0.8rem;
-        padding: 0.6rem 0; }
-      #grid .grid .grid-div:nth-child(2) .grid-btn,
-      #grid .grid .grid-div:nth-child(3) .grid-btn {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        bottom: 0; } }
+    #grid .grid .grid-div p.lg {
+      padding: 0 1.3rem;
+      font-size: 1rem;
+      line-height: 1.5rem; }
+    #grid .grid .grid-div .grid-btn.lg {
+      width: 50%;
+      font-size: 0.8rem;
+      padding: 0.6rem 0; } }
 
 @media screen and (min-width: 769px) {
   header .container {
