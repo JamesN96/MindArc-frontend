@@ -64,51 +64,55 @@ header {
     text-transform: uppercase; }
 
 @media screen and (min-width: 1920px) {
-  header div.container h1.wide {
+  header div.container h1.md.lg.xl.wide {
     font-size: 4.65rem; }
-  header div.container p.wide {
+  header div.container p.md.lg.xl.wide {
     font-size: 2.54rem;
-    top: 55.4%; }
+    top: 54.5%; }
   #grid .container.wide {
     width: 65%; }
-    #grid .container.wide .grid-div p.wide {
+    #grid .container.wide .grid-div p.md.lg.xl.wide {
       font-size: 1.2rem;
       width: 85%;
       padding: 0;
       margin: 18px auto 15px;
-      line-height: 1.8rem; } }
+      line-height: 1.8rem; }
+    #grid .container.wide .grid-div .grid-btn.lg.wide {
+      width: 45%; } }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  header div.container h1.xl {
+  header div.container h1.md.lg.xl {
     font-size: 3.45rem;
     top: 37.5%; }
-  header div.container p.xl {
+  header div.container p.md.lg.xl {
     font-size: 1.82rem;
-    top: 54%; }
+    top: 53%; }
   #grid .container.xl {
     width: 65%; }
-    #grid .container.xl .grid-div p.xl {
+    #grid .container.xl .grid-div p.md.lg.xl {
       padding: 0 0.9rem;
       font-size: 0.9rem;
       margin: 12px auto 12px;
-      line-height: 1.4rem; } }
+      line-height: 1.4rem; }
+    #grid .container.xl .grid-div .grid-btn.lg.xl {
+      width: 46%; } }
 
 @media screen and (min-width: 1171px) {
   .container {
     width: 90%; }
-  header .container h1.lg {
+  header .container h1.md.lg {
     font-size: 2.7rem;
     top: 38%; }
-  header .container p.lg {
-    font-size: 1.42rem;
-    top: 53.5%; }
-  #grid .grid .grid-div p.lg {
-    padding: 0 1.3rem;
-    font-size: 1rem;
+  header .container p.md.lg {
+    font-size: 1.44rem;
+    top: 52%; }
+  #grid .grid .grid-div p.md.lg {
+    padding: 0 1rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     margin-bottom: 15px; }
   #grid .grid .grid-div .grid-btn.lg {
-    width: 50%;
+    width: 45%;
     font-size: 0.8rem;
     padding: 0.6rem 0; } }
 
@@ -120,11 +124,11 @@ header {
     header .container img.desktop {
       display: block; }
     header .container h1.md {
-      font-size: 1.7rem;
+      font-size: 1.75rem;
       top: 37.5%; }
     header .container p.md {
-      font-size: 0.82rem;
-      top: 50%; }
+      font-size: 0.85rem;
+      top: 48%; }
   #grid .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -162,7 +166,7 @@ header {
     padding: 0 4rem;
     top: 17.5%; }
   header .container p {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     line-height: 3.5rem;
     top: 46%; }
   #grid .container {
@@ -197,7 +201,7 @@ header {
       line-height: 1.95rem;
       margin: 18px 0px; }
     #grid .grid-div .grid-btn {
-      width: 48%;
+      width: 43%;
       padding: 0.9rem;
       font-size: 1.2rem;
       border-radius: 35px;
