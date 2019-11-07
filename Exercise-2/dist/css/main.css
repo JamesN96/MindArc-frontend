@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+
+.container {
+  width: 80%;
+  border: 1px solid red;
+  margin: 0 auto;
+}
