@@ -1,11 +1,11 @@
 const xhttp = new XMLHttpRequest();
 
-// Add event listeners
+// DOM ELEMENTS
 
-const tab1 = document.querySelector(".tab-1");
-const tab2 = document.querySelector(".tab-2");
-const tab3 = document.querySelector(".tab-3");
-const tab4 = document.querySelector(".tab-4");
+const tab1 = document.querySelector("#tab-1");
+const tab2 = document.querySelector("#tab-2");
+const tab3 = document.querySelector("#tab-3");
+const tab4 = document.querySelector("#tab-4");
 
 // Event listeners
 
