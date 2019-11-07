@@ -1,5 +1,34 @@
 const xhttp = new XMLHttpRequest();
 
+// Add event listeners
+
+const tab1 = document.querySelector(".tab-1");
+const tab2 = document.querySelector(".tab-2");
+const tab3 = document.querySelector(".tab-3");
+const tab4 = document.querySelector(".tab-4");
+
+// Event listeners
+
+tab1.addEventListener("click", function(e) {
+  e.target.value = 0;
+  json(e);
+});
+
+tab2.addEventListener("click", function(e) {
+  e.target.value = 1;
+  json(e);
+});
+
+tab3.addEventListener("click", function(e) {
+  e.target.value = 2;
+  json(e);
+});
+
+tab4.addEventListener("click", function(e) {
+  e.target.value = 3;
+  json(e);
+});
+
 // READ JSON FILE function
 
 function json(e) {
