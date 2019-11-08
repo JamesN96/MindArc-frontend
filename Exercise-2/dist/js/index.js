@@ -35,9 +35,11 @@ function json(e) {
   if (xhttp.readyState == 4 && xhttp.status == 200) {
     let myObj = JSON.parse(xhttp.responseText);
     for (let i = 0; i < myObj.length; i++) {
-      document.querySelector(".title-data").innerHTML =
+      // Select the h1 inside of the target tab element
+      e.target.nextElementSibling.firstElementChild.innerHTML =
         myObj[e.target.value].title;
-      document.querySelector(".p-data").innerHTML =
+      // Select the p element inside of the target tab element
+      e.target.nextElementSibling.lastElementChild.innerHTML =
         myObj[e.target.value].content;
     }
   }
