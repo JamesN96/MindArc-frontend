@@ -43,5 +43,15 @@ function json(e) {
   }
 }
 
+// Onload function
+
+xhttp.onload = function() {
+  let myObj = JSON.parse(xhttp.responseText);
+  if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.querySelector(".title-data").innerHTML = myObj[0].title;
+    document.querySelector(".p-data").innerHTML = myObj[0].content;
+  }
+};
+
 xhttp.open("GET", "../data.json", true);
 xhttp.send();
