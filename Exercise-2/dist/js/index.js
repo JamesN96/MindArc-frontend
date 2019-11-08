@@ -34,13 +34,19 @@ tab4.addEventListener("click", function(e) {
 function json(e) {
   if (xhttp.readyState == 4 && xhttp.status == 200) {
     let myObj = JSON.parse(xhttp.responseText);
-    for (let i = 0; i < myObj.length; i++) {
-      // Select the h1 inside of the target tab element
-      e.target.nextElementSibling.firstElementChild.innerHTML =
-        myObj[e.target.value].title;
-      // Select the p element inside of the target tab element
-      e.target.nextElementSibling.lastElementChild.innerHTML =
-        myObj[e.target.value].content;
+    if (e.target.nextElementSibling.style.display == "") {
+      for (let i = 0; i < myObj.length; i++) {
+        // Display hidden Div
+        e.target.nextElementSibling.style.display = "block";
+        // Select the h1 inside of the target tab element
+        e.target.nextElementSibling.firstElementChild.innerHTML =
+          myObj[e.target.value].title;
+        // Select the p element inside of the target tab element
+        e.target.nextElementSibling.lastElementChild.innerHTML =
+          myObj[e.target.value].content;
+      }
+    } else {
+      e.target.nextElementSibling.style.display = "";
     }
   }
 }
