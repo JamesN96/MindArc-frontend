@@ -4,6 +4,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+  text-align: center;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-top: 5rem;
+}
+
 /* Header */
 
 header ul {
@@ -31,4 +38,25 @@ header ul li:hover {
 
 .title-data {
   text-align: center;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 80%;
+    margin: 3rem auto 0;
+  }
+
+  header ul li {
+    float: left;
+    top: 0;
+  }
+
+  .data {
+    position: absolute;
+    top: 218px;
+    border: 2px solid #000;
+    width: 75%;
+  }
 }
