@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  background: #d7d6d6;
 }
 
 h1 {
@@ -29,6 +30,7 @@ header ul li {
 
 header ul li:hover {
   background: #70f7c8;
+  cursor: pointer;
 }
 
 .data {
@@ -51,12 +53,14 @@ header ul li:hover {
   header ul li {
     float: left;
     top: 0;
+    border: 1px solid rgb(204, 203, 203);
   }
 
   .data {
     position: absolute;
     top: 218px;
-    border: 2px solid #000;
+    border: 2px solid rgb(137, 137, 138);
     width: 75%;
+    padding: 0 0 2rem 2.5rem;
   }
 }
