@@ -14,31 +14,34 @@ h1 {
 
 /* Header */
 
-header ul {
-  list-style: none;
+header {
   margin: 0;
   padding: 0;
 }
 
-header ul li {
+.accordion {
   background-color: #c3f4e2;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
   padding: 0.8rem 1.5rem;
   margin: 0;
+  width: 100%;
+  transition: 0.5s;
 }
 
-header ul li:hover {
+.accordion:hover {
   background: #70f7c8;
   cursor: pointer;
 }
 
-.data {
-  display: none;
+.panel {
   padding: 0 1.5rem;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
-.title-data {
+.title {
   text-align: center;
 }
 
@@ -61,6 +64,6 @@ header ul li:hover {
     top: 218px;
     border: 2px solid rgb(137, 137, 138);
     width: 75%;
-    padding: 0 0 2rem 2.5rem;
+    padding: 0 1rem 2rem 2.5rem;
   }
 }
