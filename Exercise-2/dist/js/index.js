@@ -56,8 +56,10 @@ function json(e) {
     let myObj = JSON.parse(xhttp.responseText);
     // Loop through object
     for (let i = 0; i < myObj.length; i++) {
+      // Choose the h1 of the target element and set the title
       e.target.nextElementSibling.firstElementChild.innerHTML =
         myObj[e.target.value].title;
+      // Choose the p of the target element and set the content
       e.target.nextElementSibling.lastElementChild.innerHTML =
         myObj[e.target.value].content;
     }
