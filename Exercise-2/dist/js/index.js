@@ -78,10 +78,11 @@ function animation(e) {
 
 xhttp.onload = function() {
   let myObj = JSON.parse(xhttp.responseText);
+  let panel = tab1.nextElementSibling;
   if (xhttp.readyState == 4 && xhttp.status == 200) {
-    tab1.nextElementSibling.style.display = "block";
-    document.querySelector(".title-data").innerHTML = myObj[0].title;
-    document.querySelector(".p-data").innerHTML = myObj[0].content;
+    document.querySelector(".title").innerHTML = myObj[0].title;
+    document.querySelector(".p").innerHTML = myObj[0].content;
+    tab1.nextElementSibling.style.maxHeight = panel.scrollHeight + "px";
   }
 };
 
