@@ -70,7 +70,7 @@ function animation(e) {
   if (panel.style.maxHeight) {
     panel.style.maxHeight = null;
   } else {
-    panel.style.maxHeight = panel.scrollHeight + "px";
+    panel.style.maxHeight = "75" + panel.scrollHeight + "px";
   }
 }
 
