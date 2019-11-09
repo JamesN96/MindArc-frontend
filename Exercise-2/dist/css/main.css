@@ -27,6 +27,7 @@ header {
   margin: 0;
   width: 100%;
   transition: 0.5s;
+  outline: none;
 }
 
 .accordion:hover {
@@ -43,6 +44,11 @@ header {
 
 .title {
   text-align: center;
+  margin-top: 2rem;
+}
+
+.p {
+  padding-bottom: 1.5rem;
 }
 
 /* Media Query */
@@ -53,17 +59,22 @@ header {
     margin: 3rem auto 0;
   }
 
-  header ul li {
+  .accordion {
     float: left;
     top: 0;
     border: 1px solid rgb(204, 203, 203);
+    width: 20%;
   }
 
-  .data {
+  .panel {
     position: absolute;
     top: 218px;
-    border: 2px solid rgb(137, 137, 138);
+    border: 1px solid rgb(137, 137, 138);
     width: 75%;
-    padding: 0 1rem 2rem 2.5rem;
+  }
+
+  #p1,
+  #p4 {
+    padding-bottom: 4.5rem;
   }
 }
