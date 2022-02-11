@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/JamesN96/MindArc-frontend#readme",
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   }
 }
